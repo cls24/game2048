@@ -1,5 +1,4 @@
 import math,random
-import sys,time,os
 import re, sys, time, os
 from ctypes import Structure, c_short, windll, byref
 from shutil import get_terminal_size
@@ -187,8 +186,6 @@ class OptMatrix():
         current_position = s.CursorPosition
 
         ways = ["w", "d", "s", "a"]
-        # g = GridMatrix(4)
-        # move = Move(g.makeMatrix())
         try:
             way = key.char
             if way in ways:
