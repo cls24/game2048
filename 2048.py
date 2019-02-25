@@ -1,5 +1,4 @@
-import math,random
-import re, sys, time, os
+import re, sys, time, os,random
 from ctypes import Structure, c_short, windll, byref
 from shutil import get_terminal_size
 from pynput.keyboard import Listener
@@ -69,14 +68,7 @@ class GridMatrix():
                 tmp = self.makeBorderRow(2, 11, 4)
             l.append(tmp)
         return l
-
-    def genRandomNum(self):
-        maxIdx = 11
-        num = int(math.pow(2, random.randint(1, 11)))
-        return str(num).rjust(4)
-
-
-
+    
     def genGridStr(self):
         tmp=[]
         def zero(x):
